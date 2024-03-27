@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ocultar/Mostrar Parágrafo</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #paragraph {
+        display: block;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+
+<p id="paragraph">Este é um parágrafo que pode ser ocultado/mostrado.</p>
+<button onclick="toggleParagraph()">Ocultar/Mostrar</button>
+
+<script>
+    function toggleParagraph() {
+        var paragraph = document.getElementById("paragraph");
+        if (paragraph.style.display === "none") {
+            paragraph.style.display = "block";
+        } else {
+            paragraph.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
